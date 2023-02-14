@@ -7,43 +7,48 @@
 </head>
 
 <body>
-	<form method="post">
-		<div>
-			<label for="name">name*</label>
-	        <input type="url" name=name id="name">
-		</div>
-		<div>
-			<label for="email">Email*</label>
-        <input type="email" required id="email">
-		</div>
-		<div>
-			<label for="gender">Gender*</label>
-        <input type="radio" name="gender" required id="gender">Male
-		</div>
-		<div>
-			 <input type="radio" name="gender" required id="gender">Female
-		</br><label for="car" >Car Brands</label>
-		</div>
+	<form action ="submit.html"method="post">
 	
-		<select id="car">
-              <option value="volvo">BMW</option>
-              <option value="saab">Audi</option>
-              <option value="mercedes">Mercedez</option>
-            </select>
-		<div>
-			<label for="age" >age*</label>
-        <input type="age" required id="age">
-		</div>
-		<div>
-			<label for="dob">DOB*</label>
+			<label for="name">Name*</label>
+	        <input type="text" placeholder="name" id="name" required>
+	</br> </br>
+		
+			<label for="email">Email*</label>
+        <input type="email" placeholder="email" id="email" required>
+	</br> </br>
+
+		<p>Gender</p>		
+		<label for="gender">Male</label>
+        <input type="radio" name="gender" value="male" required id="male">
+		<label for="gender">Female</label>
+        <input type="radio" name="gender" value="female" required id="female">
+		</br> </br>
+		
+		<label for="cars" >Car Brands</label>
+		<select id="car" name="CarBrands"></br>
+              <option value="BMW">BMW</option>
+              <option value="Audi">Audi</option>
+              <option value="Mercedez">Mercedez</option>
+        </select>
+		</br> </br>
+
+		
+		<label for="age" >Age*</label>
+        <input type="number" placeholder="age" required id="age">
+		</br> </br>
+
+		
+		<label for="dob">DOB*</label>
         <input type="date" required id="dob" >
-		</div>
-		<div>
+		</br> </br>
+
+		
 			<label for="password">Password*</label>
         <input type="password" required id="password">
-		</div>
-		<div>
-			<label for="submit">submit</label>
+		</br> </br>
+
+		
+		<label for="submit">Submit</label>
         <button type="submit">Submit</button>
 		</div>
 		
